@@ -18,6 +18,9 @@ npm install -S @jswork/bad-gateway-pages
 error_page 500 502 503 504 node_modules/@jswork/bad-gateway-pages/dist/502.html;
 ```
 
+## resources
+- https://stackoverflow.com/questions/7796237/custom-bad-gateway-page-with-nginx
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/bad-gateway-pages/blob/master/LICENSE.txt).
 
