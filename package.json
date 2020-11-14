@@ -1,5 +1,5 @@
 {
-  "name": "@feizheng/bad-gateway-pages",
+  "name": "@jswork/bad-gateway-pages",
   "version": "1.0.0",
   "description": "Custom Bad Gateway Pages.",
   "homepage": "https://github.com/afeiship/bad-gateway-pages",
@@ -12,7 +12,7 @@
     "start": "serve src",
     "start:dist": "serve dist"
   },
-  "main": "dist/index.js",
+  "main": "dist/502.html",
   "license": "MIT",
   "devDependencies": {
     "@jswork/gulp-pkg-header": "^1.0.1",
