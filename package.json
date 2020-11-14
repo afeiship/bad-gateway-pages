@@ -10,7 +10,8 @@
   "scripts": {
     "build": "gulp",
     "start": "serve src",
-    "start:dist": "serve dist"
+    "start:dist": "serve dist",
+    "release": "release-it"
   },
   "main": "dist/502.html",
   "license": "MIT",
@@ -23,10 +24,25 @@
     "gulp-html-minify": "0.0.14",
     "gulp-ignore": "^3.0.0",
     "gulp-load-plugins": "^2.0.1",
-    "gulp-size": "^3.0.0"
+    "gulp-size": "^3.0.0",
+    "release-it": "^14.2.1"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "bad",
+    "gateway",
+    "page",
+    "empty",
+    "502",
+    "500",
+    "404",
+    "error",
+    "nginx",
+    "apache",
+    "php",
+    "static"
+  ]
 }
