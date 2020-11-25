@@ -15,7 +15,30 @@ npm install -S @jswork/bad-gateway-pages
 ## usage
 ```conf
 #site-wide error pages
-error_page 500 502 503 504 node_modules/@jswork/bad-gateway-pages/dist/502.html;
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server ipv6only=on;
+
+  set $bad_gataway_pages "/YOUR_PATH/node_modules/@jswork/bad-gataway-pages/dist";
+
+  error_page 404 /404.html;
+  location = /404.html {
+    root $bad_gataway_pages;
+    internal;
+  }
+
+  error_page 410 /410.html;
+  location = /410.html {
+    root $bad_gataway_pages;
+    internal;
+  }
+
+  error_page 500 502 503 504 /502.html;
+  location = /502.html {
+    root $bad_gataway_pages;
+    internal;
+  }
+}
 ```
 
 ## resources
